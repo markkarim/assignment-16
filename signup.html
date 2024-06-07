@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link
+      rel="icon"
+      href="./photo/pngtree-vector-3d-login-icon-area-user-pass-vector-png-image_13062818.png" />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/signup.min.css" />
+  </head>
+  <body>
+    <section class="d-flex align-items-center justify-content-center">
+      <div class="card">
+        <div class="login text-center text-info">
+          <div class="box mx-auto py-3">
+            <h1 class=" fs-3 py-4">Smart Login System</h1>
+
+            <div class="">
+              <input
+                oninput="this"
+                type="text"
+                class="form-login fs-6"
+                id="usernamecreate"
+                placeholder="Enter your name" />
+            </div>
+            <label for="username" class="form-label"></label>
+            <div class="">
+              <input
+                oninput="this"
+                type="email"
+                class="form-login fs-6"
+                id="useremailcreate"
+                placeholder="Enter your email" />
+            </div>
+            <label for="useremail" class="form-label"></label>
+
+            <div class="">
+              <input
+                oninput="this"
+                type="password"
+                class="form-login fs-6"
+                id="userpasswordcreate"
+                placeholder="Enter password" />
+            </div>
+            <label for="userpassword" class="form-label"></label>
+
+            <p class="alert alert-warning fs-6 text-bg-warning d-none mb-3" id="errorr">
+              All inputs is required
+            </p>
+            <p class="alert alert-success text-bg-success fs-6 d-none mb-3" id="success">Success</p>
+            <p class="alert alert-success fs-6 text-bg-danger d-none mb-3" id="exit">
+              email already exists
+            </p>
+
+            <button id="signup" class="btn btn-login w-100 my-3 fs-6">
+              Sign up
+            </button>
+            <p class="text-white fs-6 fw-semibold">
+              You have an account?
+              <a
+                class="link-light link-offset-0 link-underline-opacity-0 link-underline-opacity-100-hover"
+                id="index"
+                type="button"
+                >Sign in</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.min.js"></script>
+  </body>
+</html>
